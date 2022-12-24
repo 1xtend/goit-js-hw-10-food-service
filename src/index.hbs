@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/meta title="Homework 10"}}
+  </head>
+  <body>
+     <div class="toolbar">
+      <!-- Розмітка перемикача теми -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Іконка сонця">
+          <use href="./assets/images/sprite.svg#sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Перемкнути між світлою і темною темою"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="./assets/images/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- В цей список рендери розмітку меню -->
+    
+  </body>
+</html>
